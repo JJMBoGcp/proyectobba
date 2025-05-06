@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    background-color: #ebe9e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.telefono {
+    width: 360px;
+    height: 720px;
+    background: #fff;
+    border: 14px solid #333;
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden; 
+             
+}
+
+.camarita {
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 10px;
+    position: absolute;
+    top: 6px;
+    left: 165px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Para evitar bordes dobles */
+    margin: 0px 0;
+}
+
+/* Estilo para las celdas */
+th, td {
+    padding: px; /* Espaciado dentro de las celdas */
+    border: 1px solid #ddd; /* Bordes suaves para las celdas */
+    text-align: center; /* Alineación de texto al centro */
+}
+
+/* Fondo para el encabezado */
+th {
+    background-color: #264653; /* Color de fondo para el encabezado */
+    color: white; /* Color del texto del encabezado */
+    font-weight: bold; /* Resaltar el texto del encabezado */
+}
+
+/* Fondo alternado para las filas */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo gris claro para filas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Fondo blanco para filas impares */
+}
+
+/* Resaltar la fila al pasar el ratón */
+tr:hover {
+    background-color: #e9c46a; /* Resaltar con color amarillento al pasar el ratón */
+}
+
+/* Borde y espaciado para la tabla */
+table {
+    border: 2px solid #264653;
+    border-radius: 8px; /* Bordes redondeados para la tabla */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+
+.cancha {
+    width: 100%;
+    height: 210px;
+    background: linear-gradient(#f4a261, #e76f51);
+    border: 2px solid #264653;
+    border-radius: 0px;
+    position: relative;
+    margin: -10px 0;
+}
+
+#cancha {
+    display: none;
+}
+
+.oculto {
+    display: none;
+}
+
+  
+.cancha::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 10%;
+    background-color: #333;
+    transform: translateX(-50%);
+}
+
+.cancha::after{
+    content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zona-derecha{
+    position: absolute; 
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 185px;
+    border: 2px solid #264653;
+    border-radius: 90px 0 0 90px;
+    background: #e76f51;
+}
+
+.zona-derecha::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #264653;
+    border-radius: 50%;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}
+
+.cancha {
+    width: 100%;
+    height: 210px;
+    background: linear-gradient(#f4a261, #e76f51);
+    border: 2px solid #264653;
+    border-radius: 0px;
+    position: relative;
+    margin: -10px 0;
+}
+
+/* Línea central */
+.cancha::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #333;
+    transform: translateX(-50%);
+}
+
+/* Círculo central */
+.cancha::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Zona derecha */
+.zona-derecha {
+    position: absolute; 
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 185px;
+    border: 2px solid #264653;
+    border-radius: 90px 0 0 90px;
+    background: #e76f51;
+}
+
+/* Círculo en la zona derecha */
+.zona-derecha::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #264653;
+    border-radius: 50%;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}
+
+/* Zona izquierda */
+.zona-izquierda {
+    position: absolute;
+    top: 50%;
+    left: 0; /* Posicionamos al lado izquierdo */
+    transform: translateY(-50%);
+    width: 100px;
+    height: 185px;
+    border: 2px solid #264653;
+    border-radius: 0 90px 90px 0; /* Radio de borde cambiado para el lado izquierdo */
+    background: #e76f51;
+}
+
+/* Círculo en la zona izquierda */
+.zona-izquierda::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #264653;
+    border-radius: 50%;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
+ 
